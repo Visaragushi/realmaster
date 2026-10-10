@@ -1,0 +1,46 @@
+.navbar-menu {
+    position: relative;
+    flex: 0 0 40px;
+    display: flex;
+    place-items: center;
+    margin-top: 5.5vh;
+    margin-right: 8vh;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Styling for the Google Translate widget */
+.navbar-menu #google_translate_element {
+    position: relative;
+    flex: 0 0 40px;
+    /* display: flex; */
+    place-items: center;
+    margin-bottom: 16px;
+    margin-left: 5vh;
+    height: 100%;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Hide the Google Translate icon and text */
+/* #google_translate_element img, */
+#google_translate_element span,
+#\:1\.container {
+    display: none;
+}
+/* delete text "Powered by" */
+.skiptranslate {
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}

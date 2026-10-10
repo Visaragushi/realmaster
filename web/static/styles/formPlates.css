@@ -1,0 +1,78 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.form-plates {
+    width: 40%;
+    height: 80vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 105px;
+    left: 25%;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.form-container {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-plates-title {
+    color: rgb(169, 148, 102);
+    font-size: 30px;
+}
+
+.form-inputs {
+    width: 280px;
+    background-color: rgb(229, 226, 226);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border: 0.5px solid rgb(169, 148, 102);
+    font-size: 18px;
+}
+
+.text-area {
+    height: 100px;
+}
+
+.form-plates-btn {
+    margin: 10px;
+    width: 280px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 7px;
+    background-color: green;
+    color: white;
+}
+
+.form-plates-btn:hover {
+    width: 300px;
+    background-color: rgb(108, 92, 57);
+    transition: all 0.5s ease;
+}
+
+.swal2-popup .swal2-modal .swal2-show {
+    background-color: black;
+}
+
+@media (max-width:750px) {
+    .form-plates-title {
+        font-size: 26px;
+    }
+
+    .form-plates {
+        left: 0%;
+        width: 100%;
+    }
+}

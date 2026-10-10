@@ -1,0 +1,78 @@
+body {
+	font-family: Arial, sans-serif;
+  }
+
+  #scrollToTopButton {
+  position: fixed;
+	right: 20px;
+  bottom: 45px;
+  height: 46px;
+  width: 46px;
+  display: block; 
+  border: 5px solid transparent;
+	margin: 0 auto;
+	border: 2px solid transparent;
+	border-radius: 50%;
+  margin: 0;
+	background: none;
+	box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+	cursor: pointer;
+	transition: opacity 0.3s, visibility 0.3s, background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  z-index: 9999; 
+  transition: all 200ms linear;
+  
+  }
+
+  #scrollToTopButton svg {
+	width: 20px;
+	height: 20px;
+	margin: auto;
+	display: block;
+  }
+  
+  #scrollToTopButton:hover {
+	opacity: 0.8;
+  }
+  
+/* Progress circle */
+.progress-wrap {
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    z-index: 1000; 
+    display: none; 
+}
+
+.progress-circle {
+    transform: rotate(-90deg);
+}
+
+.progress-path {
+    stroke: rgb(255, 94, 0);
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 307.919px;
+    stroke-dashoffset: 307.919px;
+    transition: stroke-dashoffset 0.2s linear;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(244, 146, 27) rgb(67, 66, 66);
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+ 
+}
+*::-webkit-scrollbar-track {
+  border-radius: 10vh;
+  background: orange;
+}
+*::-webkit-scrollbar-thumb {
+  border: 3px solid rgb(8, 6, 0);
+}
